@@ -7,5 +7,6 @@ defmodule RestApiWeb.Router do
 
   scope "/api", RestApiWeb do
     pipe_through :api
+    get "/", DefaultController, :index
   end
 end
